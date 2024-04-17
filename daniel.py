@@ -31,5 +31,5 @@ if uploaded_file is not None:
 
     # Group by 'Debt Owner' and calculate sums
     st.header("Debt Summary")
-    debt_summary = df.groupby('Debt Owner')[df.columns[-2]].sum()  # Assuming the third column contains the values to sum 
+    debt_summary = df.groupby('Debt Owner')[df.columns[1]].sum()  # Assuming the third column contains the values to sum 
     st.write(debt_summary)
